@@ -1,0 +1,31 @@
+{
+  "name": "circom-tools",
+  "version": "0.1.0",
+  "description": "Low-level utilities for Circom circuit manipulation and security research",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thep2p/circom-tools.git"
+  },
+  "keywords": [
+    "circom",
+    "zk-snark",
+    "zero-knowledge",
+    "witness",
+    "security",
+    "cryptography",
+    "blockchain"
+  ],
+  "author": "thep2p",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thep2p/circom-tools/issues"
+  },
+  "homepage": "https://github.com/thep2p/circom-tools#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
