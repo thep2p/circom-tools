@@ -27,6 +27,31 @@ node override_witness.js witness.wtns 4 999
 node override_witness.js witness.wtns 1 42
 ```
 
+## Finding Witness Indices
+
+Use the `.sym` symbol file (generated during compilation) to map signal names to witness indices:
+
+```bash
+cat circuit.sym
+```
+
+**Output format:** `labelIdx,witnessIdx,componentIdx,signalName`
+
+**Example:**
+```
+1,1,0,main.out
+2,2,0,main.a
+3,3,0,main.b
+4,4,0,main.c
+5,5,0,main.i
+```
+
+The second column is the witness index. To override `main.i` (witness[5]) to value 2:
+
+```bash
+node override_witness.js witness.wtns 5 2
+```
+
 ## Use Cases
 
 ### ✅ Recommended For
